@@ -53,6 +53,13 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
+/* Background */
+body {
+    background-color: #121212; /* Dark background similar to login and signup */
+    color: #ffffff; /* White text color for visibility on dark background */
+}
+
+
 /* Responsive Navbar */
 @media (max-width: 991px) {
     .navbar-nav .nav-item:nth-child(n+3) {
@@ -60,3 +67,11 @@
         color: white
     }
 }
+
+/* Additional Container Styling */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark container background to match theme */
+    border-radius: 8px;
+}   

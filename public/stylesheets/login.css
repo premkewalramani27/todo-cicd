@@ -1,0 +1,134 @@
+/* Navbar Background */
+.navbar {
+    background-color: #000000 !important; /* Black background */
+}
+
+/* Navbar Brand (Logo and Title) */
+.navbar-brand {
+    padding-left: 80px;
+    padding-right: 500px;
+    color: #00ffff !important; /* Neon blue text for the brand */
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #00ffff !important; /* Neon blue text for links */
+    transition: color 0.3s ease;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #00cccc !important; /* Slightly darker neon blue on hover */
+    text-decoration: underline;
+}
+
+/* Add a bottom border to the navbar */
+.navbar {
+    border-bottom: 2px solid #00ffff; /* Neon blue bottom border */
+}
+
+/* Adjust spacing between buttons */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Space between buttons */
+}
+
+/* Style for Login and Sign Up buttons */
+.navbar-nav .btn-custom {
+    background-color: #ffffff; /* Neon blue background */
+    color: #000000; /* Black text color for contrast */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for buttons */
+.navbar-nav .btn-custom:hover {
+    background-color: #000000; /* Darker neon blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Hamburger Menu Icon Color */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+/* General Body Styling */
+body {
+    background-color: #121212; /* Dark background to match the theme */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+}
+
+/* Container for the Login Form */
+.container {
+    margin-top: 50px; /* Space from the top */
+    padding: 30px;
+    background-color: #1a1a1a; /* Slightly lighter dark background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+/* Header Text */
+h2 {
+    text-align: center;
+    color: #00ffff; /* Neon blue for the title */
+    margin-bottom: 20px;
+}
+
+/* Form Group (for input fields) */
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+/* Input Fields Styling */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    background-color: #333333; /* Dark background for input */
+    border: 2px solid #00ffff; /* Neon blue border */
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #00cccc; /* Slightly darker blue on focus */
+}
+
+/* Login Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ffff; /* Neon blue button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00cccc; /* Darker neon blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Signup Link Styling */
+.text-center a {
+    color: #00ffff; /* Neon blue for the signup link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-center a:hover {
+    color: #00cccc; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+}

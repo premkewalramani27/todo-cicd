@@ -1,54 +1,41 @@
+<!-- views/home.ejs -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/stylesheets/index.css"> <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/home.css"> <!-- Your custom CSS -->
     <title>To-Do List</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/images/logo.jpg" alt="Logo" class="d-inline-block align-text-top" style="height: 40px;">
-                To-Do List
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto"> <!-- Left side items -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/mylist">My List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile">Profile</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto"> <!-- Right side items -->
-                    <li class="nav-item">
-                        <a class="nav-link btn-custom" id="login" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-custom" href="/signup">Sign Up</a>
-                    </li>
-                </ul>
+   
+    <%- include('partials/navbar') %>
+
+    <div class="container mt-5">
+
+
+        <!-- Task Input Section -->
+        <div class="card mb-4" style="background-color: #1a1a1a; color: #ffffff;">
+            <div class="card-body">
+                <h4 class="card-title" style="color: #00ffff;">Add a New Task</h4>
+                <form id="taskForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" id="taskInput" placeholder="Enter a task" required style="background-color: #333333; border: 1px solid #00ffff; color: #ffffff;">
+                        <input type="text" class ="form-control" id="descriptionInput" placeholder="Enter task description" required style="background-color: #333333; border: 1px solid #00ffff; color: #ffffff;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="background-color: #00ffff; color: #000000; border: none;">Add Task</button>
+                </form>
             </div>
         </div>
-    </nav>
 
-    <div class="container">
-        <h1>Welcome to the To-Do List App</h1>
         
+        <div id="taskCards" class="row">
+        </div>
     </div>
 
     <script src="/public/javascripts/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+    <script src="https://stackpath.
