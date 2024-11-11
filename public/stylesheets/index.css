@@ -1,0 +1,62 @@
+/* Navbar Background */
+.navbar {
+    background-color: #000000 !important; /* Black background */
+}
+
+/* Navbar Brand (Logo and Title) */
+.navbar-brand {
+    padding-left: 80px;
+    padding-right: 500px;
+    color: #00ffff !important; /* Neon blue text for the brand */
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #00ffff !important; /* Neon blue text for links */
+    transition: color 0.3s ease;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #00cccc !important; /* Slightly darker neon blue on hover */
+    text-decoration: underline;
+}
+
+/* Add a bottom border to the navbar */
+.navbar {
+    border-bottom: 2px solid #00ffff; /* Neon blue bottom border */
+}
+
+/* Adjust spacing between buttons */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Space between buttons */
+}
+
+/* Style for Login and Sign Up buttons */
+.navbar-nav .btn-custom {
+    background-color: #ffffff; /* Neon blue background */
+    color: #000000; /* Black text color for contrast */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for buttons */
+.navbar-nav .btn-custom:hover {
+    background-color: #000000; /* Darker neon blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Hamburger Menu Icon Color */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .navbar-nav .nav-item:nth-child(n+3) {
+        margin-left: 0;
+        color: white
+    }
+}
