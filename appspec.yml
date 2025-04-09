@@ -2,13 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/
+    destination: /home/ec2-user/app
 hooks:
   AfterInstall:
     - location: scripts/start.sh
       timeout: 300
-      runas: ec2-user
-  ApplicationStart:
-    - location: scripts/send-ses.sh
-      timeout: 60
       runas: ec2-user
