@@ -1,0 +1,24 @@
+name: 🚀 Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  production:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout Code
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Deploy using AWS CodeDeploy
+        uses: webfactory/create-aws-codedeploy-deployment@v1
+        with:
+          application-name: todo-cicd
+          deployment-group: production
+          deployment-config-name: CodeDeployDefault.AllAtOnce
+          github-token: ${{ secrets.GH_PAT }}
+          region: us-east-1
