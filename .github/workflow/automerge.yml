@@ -1,0 +1,36 @@
+name: 🔁 Auto-Merge Dev → Main
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+jobs:
+  merge-dev-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
+
+      - name: ⚙️ Set up Git identity
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "premkewalramani0927@gmail.com"
+
+      - name: 📥 Fetch latest branches
+        run: |
+          git fetch origin
+          git checkout main
+          git pull origin main
+          git merge origin/dev --no-edit || {
+            echo "⚠️ Merge failed. Please resolve conflicts manually.";
+            exit 1;
+          }
+
+      - name: 🚀 Push changes to main
+        run: git push origin main
