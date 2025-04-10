@@ -7,25 +7,25 @@
 .navbar-brand {
     padding-left: 80px;
     padding-right: 500px;
-    color: #00ffff !important; /* Neon blue text for the brand */
+    color: #ff0022 !important; /* Neon blue text for the brand */
     font-weight: bold;
 }
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-    color: #00ffff !important; /* Neon blue text for links */
+    color: #ff0022 !important; /* Neon blue text for links */
     transition: color 0.3s ease;
 }
 
 /* Navbar Link Hover Effect */
 .navbar-nav .nav-link:hover {
-    color: #00cccc !important; /* Slightly darker neon blue on hover */
+    color: #ff0022 !important; /* Slightly darker neon blue on hover */
     text-decoration: underline;
 }
 
 /* Add a bottom border to the navbar */
 .navbar {
-    border-bottom: 2px solid #00ffff; /* Neon blue bottom border */
+    border-bottom: 2px solid #ff0022; /* Neon blue bottom border */
 }
 
 /* Adjust spacing between buttons */
