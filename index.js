@@ -45,6 +45,7 @@ app.get('/profile/:username', (req, res) => {
 });
 
 //start server 
-app.listen(PORT,()=>{
-    console.log(`Server listening on port ${PORT}`);
-});
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Server running on port 3000');
+  });
+  
